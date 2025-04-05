@@ -1,38 +1,40 @@
-# Base limpa de API em Node
+# Clean API Starter in Node and Prisma
 
-Este repositório serve exclusivamente para oferecer uma base rápida para criação de APIs em Node.
+This repository is solely intended to provide a quick starter template for creating APIs with Node.
 
-Ele possui apenas a configuração básica do Express com Typescript e o primeiro router.
+It includes only the basic Express setup with TypeScript and the first router.
 
-## Instalação
-Você pode clonar o repositório e rodar:
+## Installation
+
+You can clone the repository and run:
+
 ```bash
 npm install
 ```
 
-Depois clonar o arquivo `.env.example` para `.env.local`:
-```bash
-cp .env.example .env.local
-```
-E alterar as variáveis de ambiente.
+## Usage
 
-## Uso
-Para rodar o projeto, utilize o comando padrão:
+To run the project, use the standard command:
+
 ```bash
 npm run dev
 ```
 
-## Adicionais
-Caso queira, é interessante remover o `origin` do repositório, para adicionar seu próprio repositório remoto e continuar o desenvolvimento.
+## Additional Notes
 
-Para ver os repositórios remotos:
+If you wish, it’s a good idea to remove the current `origin` from the repository so you can add your own remote repository and continue development.
+
+To view the remote repositories:
+
 ```bash
 git remote -v
 ```
 
-Para trocar o origin:
+To change the origin:
+
 ```bash
 git remote remove origin
 git remote add origin <url>
 ```
-Sendo `<url>` o diretório do seu repositório remoto.
+
+Where `<url>` is the URL of your remote repository...
