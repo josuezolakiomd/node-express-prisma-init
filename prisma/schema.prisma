@@ -4,39 +4,39 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
-generator client {
-  provider = "prisma-client-js"
-}
+// generator client {
+//   provider = "prisma-client-js"
+// }
 
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
 
-enum Role {
-  USER
-  ADMIN
-}
+// enum Role {
+//   USER
+//   ADMIN
+// }
 
-model User {
-  id        Int      @id @default(autoincrement())
-  status    Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  role      Role     @default(USER)
-  name      String
-  email     String   @unique
-  post      Post[]
+// model User {
+//   id        Int      @id @default(autoincrement())
+//   status    Boolean  @default(true)
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+//   role      Role     @default(USER)
+//   name      String
+//   email     String   @unique
+//   post      Post[]
 
-  @@map("users")
-}
+//   @@map("users")
+// }
 
-model Post {
-  id       Int     @id @default(autoincrement())
-  title    String
-  subtitle String?
-  userId   Int
-  author   User    @relation(fields: [userId], references: [id])
+// model Post {
+//   id       Int     @id @default(autoincrement())
+//   title    String
+//   subtitle String?
+//   userId   Int
+//   author   User    @relation(fields: [userId], references: [id])
 
-  @@map("posts")
-}
+//   @@map("posts")
+// }

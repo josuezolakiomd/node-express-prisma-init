@@ -2,8 +2,7 @@
   "name": "node-api-base",
   "version": "1.0.0",
   "scripts": {
-    "start": "node --env-file=.env --import=tsx --watch src/server.ts",
-    "dev": "ts-node src/server.ts"
+    "start": "node --env-file=.env --import=tsx --watch src/server.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
